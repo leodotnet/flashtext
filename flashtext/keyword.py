@@ -535,7 +535,7 @@ class KeywordProcessor(object):
                                 sequence_end_pos = idy
                                 is_longer_seq_found = True
                         if is_longer_seq_found:
-                            idx = sequence_end_pos
+                            idx = sequence_end_pos - 1
                     current_dict = self.keyword_trie_dict
                     if longest_sequence_found:
                         keywords_extracted.append((longest_sequence_found, sequence_start_pos, idx))
